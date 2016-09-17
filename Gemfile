@@ -29,6 +29,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # Adds Minitest as the default testing library in Rails
   gem 'minitest-rails', '~> 3.0'
+  # Provides a framework and DSL for defining and using factories
+  gem 'factory_girl_rails', '~> 4.7'
 end
 
 group :development do
