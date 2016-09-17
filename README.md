@@ -1,1 +1,1 @@
-# chewapi
+# chewapi [![Code Climate](https://codeclimate.com/github/gbalbuena/chewapi/badges/gpa.svg)](https://codeclimate.com/github/gbalbuena/chewapi) [![Test Coverage](https://codeclimate.com/github/gbalbuena/chewapi/badges/coverage.svg)](https://codeclimate.com/github/gbalbuena/chewapi/coverage)
