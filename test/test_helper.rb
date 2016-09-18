@@ -15,8 +15,10 @@ require "minitest/pride"
 CodeClimate::TestReporter.start
 
 VCR.configure do |config|
-  config.cassette_library_dir = "cassettes"
+  config.cassette_library_dir = "test/cassettes"
   config.hook_into :webmock # or :fakeweb
+  config.ignore_hosts 'codeclimate.com'
+  config.default_cassette_options = { :record => :new_episodes }
 end
 
 class ActiveSupport::TestCase

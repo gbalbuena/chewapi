@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :page do
-    url "http://example"
-    content ""
+    url "http://www.github.com"
+    content nil
   end
 end
