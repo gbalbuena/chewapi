@@ -6,9 +6,8 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 # Loads environment variables from `.env`, Autoload dotenv in Rails.
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
-
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Pg is the Ruby interface to the PostgreSQL
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
