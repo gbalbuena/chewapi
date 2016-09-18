@@ -17,6 +17,14 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     end
   end
 
+  it "should not create page" do
+    expect {
+      post pages_url, params: { page: { url: 'wrongurl' } }
+    }.wont_change "Page.count"
+
+    value(response.status).must_equal 422
+  end
+
   it "shows page" do
     VCR.use_cassette("github") do
       page = create(:page, url: 'https://www.github.com')
