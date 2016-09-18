@@ -13,3 +13,7 @@ chewapi $ rake db:migrate
 
 chewapi $ rails s
 ```
+
+## API Documentation
+
+Postman project: [chewapi.postman_collection.json](https://gist.github.com/gbalbuena/1c43f81e1476caffddc441d3abeb2bb9)
