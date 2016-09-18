@@ -33,6 +33,10 @@ group :development, :test do
   gem 'minitest-rails', '~> 3.0'
   # Provides a framework and DSL for defining and using factories
   gem 'factory_girl_rails', '~> 4.7'
+
+  # Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.
+  gem 'vcr', '~> 3.0', '>= 3.0.3'
+  gem 'webmock', '~> 2.1'
 end
 
 group :development do

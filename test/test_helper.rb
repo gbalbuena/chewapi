@@ -3,8 +3,7 @@ require File.expand_path("../../config/environment", __FILE__)
 require "rails/test_help"
 require "minitest/rails"
 require "codeclimate-test-reporter"
-
-CodeClimate::TestReporter.start
+require "vcr"
 
 # To add Capybara feature tests add `gem "minitest-rails-capybara"`
 # to the test group in the Gemfile and uncomment the following:
@@ -12,6 +11,13 @@ CodeClimate::TestReporter.start
 
 # Uncomment for awesome colorful output
 require "minitest/pride"
+
+CodeClimate::TestReporter.start
+
+VCR.configure do |config|
+  config.cassette_library_dir = "cassettes"
+  config.hook_into :webmock # or :fakeweb
+end
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
